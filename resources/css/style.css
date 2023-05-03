@@ -1,0 +1,105 @@
+
+/*.active svg path{*/
+/*    fill: #ca3164 !important;*/
+/*}*/
+/*.active{*/
+/*    color:#ca3164 !important;*/
+/*}*/
+/*.active::after{*/
+/*    background-color:#ca3164 !important;*/
+/*}*/
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+
+.active{
+   display: block ;
+}
+.sidebar{
+    min-width: 320px;
+}
+.aside{
+    transition: all 0.5s;
+    left: 0px;
+}
+.sidebar a{
+    position: relative;
+}
+table{
+    min-width: 800px;
+    border-collapse: separate;
+    border-spacing:0 30px ;
+}
+.hidden{
+    display: none;
+}
+.down{
+    display: block;
+}
+.popup{
+    background-color: rgba(0, 0, 0, 0.74);
+    display: none;
+}
+.test-popup{
+    background-color: rgba(0, 0, 0, 0.74);
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    table{
+        border-spacing: 0 10px ;
+    }
+    .aside{
+        width: 100%;
+    }
+    .profice{
+        display: none !important;
+    }
+}
+@media screen and (min-width: 1280px) {
+    main{
+        height: calc(100vh - 92px);
+    }
+}
+@media screen and (min-width: 1536px) {
+    .responsive{
+        display: block !important;
+    }
+    .sidebar a:hover  svg path{
+        fill: #ca3164;
+        transition: all 0.3s;
+    }
+    .sidebar a:after{
+        position: absolute;
+        width: 4px;
+        height: 25px;
+        right: 0;
+        border-radius: 10px 0px 0px 10px;
+        content: '';
+        display: block;
+        background-color:transparent;
+        transition: all 0.4s;
+    }
+    a:hover:after{
+        background:#ca3164;
+    }
+    a.logo:hover:after{
+        background-color: transparent;
+    }
+}
+.seminar-section{
+    max-height: 700px;
+}
+
+/*.card{*/
+/*    width: 100%;*/
+/*    min-width: 400px !important;*/
+
+/*}*/
+@media screen and (max-width: 640px) {
+    .seminar-section{
+        max-height: 400px;
+    }
+}
+textarea{
+    max-height: 200px;
+}
